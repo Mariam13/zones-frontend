@@ -32,7 +32,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "src/assets/scss/main.scss"
             ],
             "scripts": []
           },
@@ -41,7 +42,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "1mb",
                   "maximumError": "1MB"
                 },
                 {
@@ -91,7 +92,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "src/assets/scss/main.scss"
             ],
             "scripts": []
           }

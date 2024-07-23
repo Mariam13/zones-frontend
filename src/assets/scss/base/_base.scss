@@ -1,0 +1,47 @@
+/* HTML */
+html {
+  font-family: sans-serif;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Body and HTML */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-base;
+  font-family: $font-family-base;
+
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Body */
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px !important;
+
+  /* Tablet mode */
+  @media (min-width: 992px) {
+    font-size: 14px !important;
+  }
+
+  /* Mobile mode */
+  @media (min-width: 768px) {
+    font-size: 14px !important;
+  }
+}
+
+.mat-divider {
+  border-top-color: $light-grey;
+}
+
+.mat-icon {
+  color: $dark-grey;
+}

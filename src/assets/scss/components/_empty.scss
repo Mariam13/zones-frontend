@@ -1,0 +1,35 @@
+.#{$prefix}-empty {
+  &--block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+
+  &--block-right {
+    &--texts {
+      margin-bottom: 1rem;
+    }
+
+    &--title {
+      margin: 0!important;
+      color: $dark-grey;
+      font-size: 1.375rem;
+      font-weight: $font-weight-md;
+    }
+
+    &--desc {
+      color: $md-grey;
+      font-size: .75rem;
+    }
+  }
+
+  &--block-icon {
+    width: 100px!important;
+    height: 100px!important;;
+    font-size: 80px;
+    display: flex!important;;
+    align-items: center;
+    justify-content: center;
+  }
+}

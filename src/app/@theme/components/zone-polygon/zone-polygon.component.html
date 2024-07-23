@@ -1,0 +1,8 @@
+<svg class="{{customClass}}"
+     width="200" height="200" (click)="addPointEvent.emit($event)">
+  <polygon [attr.points]="getPointsForPolygon(points)"
+           style="fill:none;stroke:red;stroke-width:1" />
+  <circle *ngFor="let point of points; let i = index"
+          [attr.cx]="point[0]" [attr.cy]="point[1]" r="5"
+          [attr.fill]="zonePointColors[i]" />
+</svg>

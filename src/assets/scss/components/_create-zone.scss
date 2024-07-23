@@ -1,0 +1,28 @@
+.#{$prefix}-create-zone {
+  &--form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--block {
+    //margin: 1rem;
+  }
+
+  &--hint {
+    text-align: center;
+    color: $dark-grey;
+    margin: 2rem 0 1rem 0!important;
+  }
+
+  &--polygon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--polygon-svg {
+    border-radius: 4px;
+    border: 1px solid $light-grey;
+  }
+}

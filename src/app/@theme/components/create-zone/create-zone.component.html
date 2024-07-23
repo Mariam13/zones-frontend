@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>Create Zone</h2>
+<app-loader [progressId]="progressId"></app-loader>
+<mat-dialog-content>
+  <div class="ze-create-zone--form">
+    <div>
+      <mat-form-field appearance="outline" class="ze-listing--header--input">
+        <input [(ngModel)]="zone.name" type="text" matInput placeholder="Zone Name">
+      </mat-form-field>
+      <div class="ze-create-zone--block">
+        <p class="ze-create-zone--hint">
+          Click to add points (Max 4)
+        </p>
+        <div class="ze-create-zone--polygon">
+          <app-zone-polygon [points]="zone.points"
+                            (addPointEvent)="addPoint($event)"
+                            customClass="ze-create-zone--polygon-svg"></app-zone-polygon>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-flat-button
+          [disabled]="!isValidPoints()"
+          (click)="onConfirm()">Create</button>
+</mat-dialog-actions>
